@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "websiteName": "SwiftInbox: Temporary Email Maker",
+    "technology": [
+      "React.js",
+      "Tailwindcss",
+      "Firebase",
+      "Express.js",
+      "Mongodb",
+      "Mongoose"
+    ],
+    "details": "Team project. Key features and my contribution to the project- Implements user authentication with admin and user role-based access control dashboard. Implements complete Blog feature. Explores Mongoose with MongoDB database as a new technology",
+    "liveSiteLink": "https://swiftinbox.netlify.app/",
+    "githubClientCode": "https://github.com/mdshahadat12/SwiftInbox-Client",
+    "githubServerCode": "https://github.com/mdshahadat12/SwiftInbox-Server",
+    "ssUrl": "https://i.ibb.co/QdkrCBh/swiftinbox-netlify-app-1.png"
+  },
+  {
+    "id": 2,
+    "websiteName": "Pawspalace: Pet Adoption And Donation Platform",
+    "technology": [
+      "React.js",
+      "Tailwindcss",
+      "Firebase",
+      "Express.js",
+      "Mongodb",
+      "Stripe"
+    ],
+    "details": "This project integrates Firebase for authentication, MongoDB for CRUD operations, React.js for the frontend, Express.js for the backend and includes Stripe for payment options. There also implemented user/admin role.",
+    "liveSiteLink": "https://pawspalace-pet-adoption.web.app/",
+    "githubClientCode": "https://github.com/devalienbrain/Pet-Adoption-MERN-Project-Client",
+    "githubServerCode": "https://github.com/devalienbrain/Pet-Adoption-MERN-Project-Server",
+    "ssUrl": "https://i.ibb.co/x5473CV/pawspalace-pet-adoption-web-app-1.png"
+  },
+  {
+    "id": 3,
+    "websiteName": "BookByte: Online Library Management System",
+    "technology": [
+      "React.js",
+      "Tailwindcss",
+      "Firebase",
+      "Express.js",
+      "Mongodb"
+    ],
+    "details": "The library management software named BookByte developed using React with CRUD (Create, Read, Update, Delete) functionality and JWT (JSON Web Tokens) for authentication and security.",
+    "liveSiteLink": "https://library-management-crud-jwt.web.app/",
+    "githubClientCode": "https://github.com/devalienbrain/Online-library-bookbyte-project",
+    "githubServerCode": "https://github.com/devalienbrain/Online-library-bookbyte-server",
+    "ssUrl": "https://i.ibb.co/mc7ksdH/project-SS.png"
+  }
+]

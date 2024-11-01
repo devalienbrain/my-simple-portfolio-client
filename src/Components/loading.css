@@ -1,0 +1,4 @@
+.loading-container {
+  position: relative;
+  transition: background-color 3000ms ease; /* Adjust the duration and timing function as needed */
+}
