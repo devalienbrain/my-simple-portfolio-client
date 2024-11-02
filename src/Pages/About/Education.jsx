@@ -15,9 +15,8 @@ const Education = () => {
 
   return (
     <>
-      <PageTitle title={title} subTitle={subTitle}></PageTitle>
       <div
-        className="my-10 text-center bg-gradient-to-r from-slate-900 via-cyan-800 to-cyan-950 rounded-2xl shadow-xl"
+        className="my-10 text-center"
         id="education"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
