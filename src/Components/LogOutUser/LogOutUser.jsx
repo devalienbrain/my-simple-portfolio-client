@@ -4,7 +4,7 @@ import { Button, Tooltip } from "@material-tailwind/react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
-import devIcon from "../../../public/Resources/icon-developer.gif";
+import devIcon from "/Resources/icon-developer.gif";
 
 const LogOutUser = () => {
   const { loginGithub, loginGoogle, user, logOut } = useContext(AuthContext);

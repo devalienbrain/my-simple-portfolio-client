@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import SkillCard from "./SkillCard";
-import PageTitle from "../../Components/PageTitle/PageTitle";
-import SkillLogos from "./SkillLogos";
 
 const Skills = () => {
   const title = "Skills.";
