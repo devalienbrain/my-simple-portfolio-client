@@ -1,87 +1,38 @@
 [
   {
     "id": 1,
-    "title": "HTML",
-    "details": "Markup language for creating web pages.",
-    "projectLink": "https://devalienbrain.github.io/team-page-challenge/my-team-page.html",
-    "logo": "https://i.ibb.co/zS2jBYB/icons8-html-logo-50.png"
+    "title": "TypeScript",
+    "logo": "https://i.ibb.co.com/SPB3K5w/1typescript.png"
   },
   {
     "id": 2,
-    "title": "CSS",
-    "details": "Stylesheet language for designing web pages.",
-    "projectLink": "https://devalienbrain.github.io/11-B8A2-Gamer-Zone/",
-    "logo": "https://i.ibb.co/1Z8pHF3/icons8-css-logo-50.png"
+    "title": "Redux",
+    "logo": "https://i.ibb.co.com/K5ydjxb/2redux.png"
   },
   {
     "id": 3,
-    "title": "Tailwind CSS",
-    "details": "Utility-first CSS framework for rapid UI development.",
-    "projectLink": "https://devalienbrain.github.io/12-tailwind-intro-penguin-fashion/",
-    "logo": "https://i.ibb.co/dBxNbg4/icons8-tailwind-css-48.png"
+    "title": "Nextjs",
+    "logo": "https://i.ibb.co.com/HCtrhD0/3Nextjs.png"
   },
 
   {
     "id": 4,
-    "title": "JavaScript",
-    "details": "Modern version of JavaScript with enhanced features.",
-    "projectLink": "https://summer-sale-devalienbrain.surge.sh/",
-    "logo": "https://i.ibb.co/RzxFp89/icons8-js-50.png"
+    "title": "MongoDB",
+    "logo": "https://i.ibb.co.com/QX3RrPn/4MongoDB.png"
   },
   {
     "id": 5,
-    "title": "React.js",
-    "details": "JavaScript library for building user interfaces.",
-    "projectLink": "https://macabre-attraction.surge.sh/",
-    "logo": "https://i.ibb.co/99xt9XQ/icons8-react.gif"
+    "title": "Express",
+    "logo": "https://i.ibb.co.com/VV44JBj/express-js1720895493-logowik-com.png"
   },
   {
     "id": 6,
-    "title": "Nextjs",
-    "details": "User authentication service provided by Firebase.",
-    "projectLink": "https://event-management-yoga.web.app/",
-    "logo": "https://i.ibb.co/ftrKCG4/icons8-next-js-48.png"
+    "title": "React",
+    "logo": "https://i.ibb.co.com/5xVhtHs/6React.png"
   },
   {
     "id": 7,
     "title": "Nodejs",
-    "details": "UI component library for Tailwind CSS.",
-    "projectLink": "https://devalienbrain.github.io/15-B8A3-fruit-brust/",
-    "logo": "https://i.ibb.co/VBjZjsr/icons8-node-js-64.png"
-  },
-  {
-    "id": 8,
-    "title": "Express.js",
-    "details": "Web application framework for Node.js.",
-    "projectLink": "https://brand-shop-client-da3a8.web.app/",
-    "logo": "https://i.ibb.co/1sk1g67/icons8-express-js-50.png"
-  },
-  {
-    "id": 9,
-    "title": "MongoDB",
-    "details": "NoSQL database for scalable and flexible data storage.",
-    "projectLink": "https://library-management-crud-jwt.web.app/",
-    "logo": "https://i.ibb.co/FVX8YHf/icons8-mongodb-48.png"
-  },
-  {
-    "id": 10,
-    "title": "Mongoose",
-    "details": "NoSQL database for scalable and flexible data storage.",
-    "projectLink": "https://library-management-crud-jwt.web.app/",
-    "logo": "https://i.ibb.co/gTN0k8N/letter-m.png"
-  },
-  {
-    "id": 11,
-    "title": "Redux",
-    "details": "NoSQL database for scalable and flexible data storage.",
-    "projectLink": "https://library-management-crud-jwt.web.app/",
-    "logo": "https://i.ibb.co/5h20vn8/redux.png"
-  },
-  {
-    "id": 12,
-    "title": "Typescript",
-    "details": "NoSQL database for scalable and flexible data storage.",
-    "projectLink": "https://library-management-crud-jwt.web.app/",
-    "logo": "https://i.ibb.co/23Ztz3G/typescript.png"
+    "logo": "https://i.ibb.co.com/T0vrfS8/7Nodejs.png"
   }
 ]

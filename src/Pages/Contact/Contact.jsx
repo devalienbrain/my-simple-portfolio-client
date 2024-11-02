@@ -61,27 +61,24 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-full md:w-2/3 flex flex-col gap-9 card"
+            className="w-full flex flex-col gap-9 card"
           >
             <span className="text-slate-300 pb-3 font-bold text-xl text-center">
               Write Messege
             </span>
-            <div className="flex flex-col md:flex-row justify-between gap-2 text-sm">
-              {/* <label>Your name</label> */}
-              <input
-                type="text"
-                name="user_name"
-                className="rounded-md border flex-1 p-2"
-                placeholder="Your Name"
-              />
-              {/* <label>Your email</label> */}
-              <input
-                type="email"
-                name="user_email"
-                className="rounded-md border flex-1 p-2"
-                placeholder="Your Email"
-              />
-            </div>
+            <input
+              type="text"
+              name="user_name"
+              className="rounded-md border flex-1 p-2"
+              placeholder="Your Name"
+            />
+            {/* <label>Your email</label> */}
+            <input
+              type="email"
+              name="user_email"
+              className="rounded-md border flex-1 p-2"
+              placeholder="Your Email"
+            />
             {/* <label>Write your message here</label> */}
             <textarea
               name="message"

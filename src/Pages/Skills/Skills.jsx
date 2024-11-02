@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SkillCard from "./SkillCard";
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import SkillLogos from "./SkillLogos";
 
 const Skills = () => {
   const title = "Skills.";
@@ -23,7 +24,6 @@ const Skills = () => {
 
   return (
     <div id="skills" className="py-10">
-     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-950/10 p-2 rounded-2xl">
         {skills.map((skill) => (
           <SkillCard key={skill.id} skill={skill}></SkillCard>

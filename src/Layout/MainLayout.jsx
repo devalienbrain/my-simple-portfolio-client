@@ -5,16 +5,27 @@ import Banner from "../Components/Header/Banner";
 import About from "../Pages/About/About";
 import Skills from "../Pages/Skills/Skills";
 import LogOutUser from "../Components/LogOutUser/LogOutUser";
+import { Helmet } from "react-helmet-async";
+import Projects from "../Pages/Projects/Projects";
+import Education from "../Pages/About/Education";
+import Contact from "../Pages/Contact/Contact";
 const MainLayout = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white">
-        <div className="p-2 max-w-5xl mx-auto">
+      <Helmet>
+        <title>Hassan | Dev</title>
+      </Helmet>
+      <div className="bg-slate-950 text-slate-100 font-semibold text-sm">
+        <div className="p-2 max-w-4xl mx-auto">
           <Navbar />
-          <Banner />
-          <Skills />
-          <Home />
-          <Footer />
+          <div className="mt-3">
+            <Banner />
+            <Skills />
+            <Projects />
+            <Education />
+            <Contact />
+            <Footer />
+          </div>
         </div>
       </div>
       {/* <LogOutUser /> */}

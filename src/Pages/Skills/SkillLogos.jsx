@@ -1,24 +1,29 @@
-import react from "/Resources/SkillsIcon/1React-Dark.svg";
-import tailwind from "/Resources/SkillsIcon/2TailwindCSS-Dark.svg";
-import js from "/Resources/SkillsIcon/3JavaScript.svg";
-import express from "/Resources/SkillsIcon/4ExpressJS-Dark.svg";
-import mongodb from "/Resources/SkillsIcon/5MongoDB.svg";
-import figma from "/Resources/SkillsIcon/6Figma-Dark.svg";
-import vscode from "/Resources/SkillsIcon/8VSCode-Dark.svg";
+import typexcript from "../../../public/Resources/1typescript.png";
+import redux from "../../../public/Resources/2redux.png";
+import nextjs from "../../../public/Resources/3nextjs.png";
+import mongodb from "../../../public/Resources/4MOngoDB.png";
+import express from "../../../public/Resources/5Express.png";
+import react from "../../../public/Resources/6react.png";
+import nodejs from "../../../public/Resources/7nodejs.png";
 
 function SkillLogos() {
   return (
     <section className="container mx-auto">
       <div className="flex flex-col gap-7">
         <div className="flex justify-around align-middle items-center gap-2 md:gap-5 lg:gap-16">
-          <span>Languages and tools</span>
-          <Logo logoSrc={react} alt={react} />
-          <Logo logoSrc={tailwind} alt={tailwind} />
-          <Logo logoSrc={js} alt={js} />
-          <Logo logoSrc={express} alt={express} />
-          <Logo logoSrc={mongodb} alt={mongodb} />
-          <Logo logoSrc={figma} alt={figma} />
-          <Logo logoSrc={vscode} alt={vscode} />
+          <Logo logoSrc={typexcript} alt={typexcript} /> TypeScript
+          <Logo logoSrc={redux} alt={redux} /> Redux
+          <Logo logoSrc={nextjs} alt={nextjs} /> NextJS
+          <Logo logoSrc={mongodb} alt={mongodb} /> MongoDB
+          <Logo
+            logoSrc={express}
+            alt={express}
+            className="text-white bg-white"
+          />{" "}
+          Express
+          <Logo logoSrc={react} alt={react} /> React
+          <Logo logoSrc={nodejs} alt={nodejs} />
+          NodeJS
         </div>
       </div>
     </section>

@@ -34,19 +34,11 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="w-full flex items-center justify-start py-10">
-      <div className="flex flex-col gap-2">
-        <h1 className="text-4xl font-semibold">
-          Hi, I'm <span className="font-bold">Sabbir Hassan</span>
-        </h1>
-        
-        <div id="typewriter" className="text-2xl font-medium text-gray-300"></div>
-        
-        <p className="text-base font-light max-w-md text-gray-400 mt-2">
-          I specialize in crafting, deploying, and maintaining seamless web
+    <div className="w-full py-10">
+       <p className="text-base font-light text-gray-400">
+        Hi, I'm <span className="font-bold">Sabbir Hassan</span> I specialize in crafting, deploying, and maintaining seamless web
           infrastructures for flawless user experiences!
         </p>
-      </div>
     </div>
   );
 };

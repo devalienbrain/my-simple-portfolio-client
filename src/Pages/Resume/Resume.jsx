@@ -1,16 +1,16 @@
-import { FaDownload } from "react-icons/fa";
+import { PiDownloadSimpleThin } from "react-icons/pi";
 function Resume() {
   const cvDownloadLink =
     "https://drive.google.com/uc?export=download&id=137qSybh1PpW1uoCoYmSh09pb0Xt9NY8vTwuELU8kFkI";
 
   return (
     <a href={cvDownloadLink}>
-      <span className="flex justify-center gap-3 items-center">
+      <div className="flex justify-center gap-1 items-center">
+        <p className="text-slate-400">resume</p>
         <span className="rounded-full w-9 h-9 flex justify-center items-center">
-          <FaDownload />
+          <PiDownloadSimpleThin />
         </span>
-        <span className="flex-1 -ml-3 p-3 ">Resume</span>
-      </span>
+      </div>
     </a>
   );
 }
