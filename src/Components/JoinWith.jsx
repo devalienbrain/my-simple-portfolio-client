@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import { Button, Tooltip } from "@material-tailwind/react";
 

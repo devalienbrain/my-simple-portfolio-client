@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from "../Provider/AuthProvider";
 import { Button, Tooltip } from "@material-tailwind/react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";

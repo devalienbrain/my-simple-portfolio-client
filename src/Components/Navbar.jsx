@@ -1,5 +1,5 @@
-import NavLinks from "./Shared/NavLinks/NavLinks";
-import Resume from "./Shared/Resume/Resume";
+import NavLinks from "./shared/NavLinks";
+import Resume from "./shared/Resume";
 
 const Navbar = () => {
   return (

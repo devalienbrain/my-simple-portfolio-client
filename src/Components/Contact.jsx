@@ -1,19 +1,13 @@
 import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-// import PageTitle from "../../Components/PageTitle/PageTitle";
-// import { Helmet } from "react-helmet-async";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
-import PageTitle from "../../Components/PageTitle/PageTitle";
 
 
 const Contact = () => {
   const form = useRef();
-  const title = "Contact.";
-  const subTitle =
-    "Results-driven professional. Skilled in full-stack web development. Eager to bring innovation and drive success. Please connect and send your message.";
   const sendEmail = (e) => {
     e.preventDefault();
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import animationData from "../lotties/loading.json";
 import "./loading.css";
 import devPic from "/Resources/icon-developer.gif";

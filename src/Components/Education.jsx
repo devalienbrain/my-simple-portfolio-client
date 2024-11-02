@@ -1,21 +1,16 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-// import PageTitle from "../../Components/PageTitle/PageTitle";
 import { useEffect } from "react";
-import PageTitle2 from "../../Components/PageTitle/PageTitle2";
-import PageTitle from "../../Components/PageTitle/PageTitle";
 const Education = () => {
-  const title = "Education.";
-  const subTitle = "My Academic Achievements and Qualifications";
-
   useEffect(() => {
     Aos.init({ duration: 5000 });
   }, []);
 
   return (
     <>
-      <h1 className="text-center text-xl font-bold text-slate-300">Education</h1>
+      <h1 className="text-center text-xl font-bold text-slate-300">
+        Education
+      </h1>
       <div
         className="my-10 text-center"
         id="education"

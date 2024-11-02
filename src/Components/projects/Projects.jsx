@@ -1,15 +1,7 @@
-// import { useLoaderData } from "react-router-dom";
-import PageTitle from "../../Components/PageTitle/PageTitle";
-import { Helmet } from "react-helmet-async";
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
 
 const Projects = () => {
-  const title = "Projects.";
-  const subTitle = "Details of some projects I've done or still working on.";
-
-  // const projects = useLoaderData() || [];
-
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +23,9 @@ const Projects = () => {
   }, []); // Empty dependency array means this effect runs only once, on component mount
   return (
     <div id="projects">
-      <h1 className="text-xl font-extrabold text-slate-300 py-5">Project showcasing</h1>
+      <h1 className="text-xl font-extrabold text-slate-300 py-5 my-10">
+        Project showcasing
+      </h1>
       <div>
         <div className="grid grid-cols-1 gap-10">
           {projects.map((project) => (
