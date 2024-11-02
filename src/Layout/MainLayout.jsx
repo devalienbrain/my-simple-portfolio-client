@@ -9,11 +9,12 @@ import { Helmet } from "react-helmet-async";
 import Projects from "../Pages/Projects/Projects";
 import Education from "../Pages/About/Education";
 import Contact from "../Pages/Contact/Contact";
+import Image from "../Components/Image/image";
 const MainLayout = () => {
   return (
     <>
       <Helmet>
-        <title>Hassan | Dev</title>
+        <title>Sabbir Hassan</title>
       </Helmet>
       <div className="bg-slate-950 text-slate-100 font-semibold text-sm">
         <div className="p-2 max-w-4xl mx-auto">
@@ -22,6 +23,7 @@ const MainLayout = () => {
             <Banner />
             <Skills />
             <Projects />
+            <Image />
             <Education />
             <Contact />
             <Footer />

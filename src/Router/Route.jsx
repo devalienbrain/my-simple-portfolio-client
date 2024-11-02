@@ -4,7 +4,6 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Projects from "../Pages/Projects/Projects";
 import Skills from "../Pages/Skills/Skills";
-import Resume from "../Pages/Resume/Resume";
 import Contact from "../Pages/Contact/Contact";
 
 const Router = createBrowserRouter([
@@ -27,10 +26,7 @@ const Router = createBrowserRouter([
         element: <Skills></Skills>,
         loader: () => fetch("/Skills.json"),
       },
-      {
-        path: "/resume",
-        element: <Resume></Resume>,
-      },
+      
       {
         path: "/contact",
         element: <Contact></Contact>,

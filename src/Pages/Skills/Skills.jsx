@@ -24,7 +24,9 @@ const Skills = () => {
 
   return (
     <div id="skills" className="py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-950/10 p-2 rounded-2xl">
+      <h1 className="text-xl font-extrabold text-slate-300 py-5">Skill set</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-950/10 rounded-2xl">
         {skills.map((skill) => (
           <SkillCard key={skill.id} skill={skill}></SkillCard>
         ))}

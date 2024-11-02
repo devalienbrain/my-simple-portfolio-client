@@ -31,6 +31,7 @@ const Projects = () => {
   }, []); // Empty dependency array means this effect runs only once, on component mount
   return (
     <div id="projects">
+      <h1 className="text-xl font-extrabold text-slate-300 py-5">Project showcasing</h1>
       <div>
         <div className="grid grid-cols-1 gap-10">
           {projects.map((project) => (

@@ -15,6 +15,7 @@ const Education = () => {
 
   return (
     <>
+      <h1 className="text-center text-xl font-bold text-slate-300">Education</h1>
       <div
         className="my-10 text-center"
         id="education"

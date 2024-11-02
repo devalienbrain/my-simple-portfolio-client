@@ -1,13 +1,13 @@
-import Resume from "../../Pages/Resume/Resume";
 import NavLinks from "./Shared/NavLinks/NavLinks";
+import Resume from "./Shared/Resume/Resume";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center py-3">
-      <div className="flex justify-start items-center gap-3 text-base">
+    <div className="flex justify-between items-center py-7 text-slate-300">
+      <div className="flex justify-start">
         <NavLinks />
       </div>
-      <span className="flex justify-end hover:text-cyan-400">
+      <span className="flex justify-end">
         <Resume />
       </span>
     </div>

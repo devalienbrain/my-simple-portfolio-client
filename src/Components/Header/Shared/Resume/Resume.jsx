@@ -5,11 +5,9 @@ function Resume() {
 
   return (
     <a href={cvDownloadLink}>
-      <div className="flex justify-center gap-1 items-center">
-        <p className="text-slate-400">resume</p>
-        <span className="rounded-full w-9 h-9 flex justify-center items-center">
-          <PiDownloadSimpleThin />
-        </span>
+      <div className="flex justify-center items-center gap-1 hover:text-cyan-400">
+        <p>resume</p>
+        <PiDownloadSimpleThin className="w-5 h-5" />
       </div>
     </a>
   );

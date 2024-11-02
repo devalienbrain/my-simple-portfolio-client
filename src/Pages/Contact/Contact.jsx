@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 
-import bannerImg from "/Resources/hassan.png";
 
 const Contact = () => {
   const form = useRef();
@@ -46,22 +45,12 @@ const Contact = () => {
       {/* <Helmet>
         <title>Hassan | Contact</title>
       </Helmet> */}
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="flex-1 flex justify-start items-center">
-          <img
-            // ref={bannerImgRef}
-            alt="Hassan's Photo"
-            src={bannerImg}
-            className="w-96"
-          />
-          {/* <LottieAstronot /> */}
-        </div>{" "}
-        <div className="flex gap-5 my-10" data-aos="fade">
+      <div className="flex gap-5 my-10" data-aos="fade">
           {/* Contact with form-email Starts*/}
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-full flex flex-col gap-9 card"
+            className="w-full flex flex-col gap-3 card"
           >
             <span className="text-slate-300 pb-3 font-bold text-xl text-center">
               Write Messege
@@ -93,7 +82,6 @@ const Contact = () => {
           </form>
           {/* Contact with form-email Ends*/}
         </div>
-      </div>
     </div>
   );
 };
