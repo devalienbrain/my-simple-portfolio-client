@@ -1,6 +1,6 @@
 import bannerImg from "/Resources/hassan.png";
 
-const Image = () => {
+const ImageComponent = () => {
   return (
     <div className="flex flex-col md:flex-row items-center">
       <div className="flex-1 flex justify-start items-center">
@@ -19,4 +19,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default ImageComponent;

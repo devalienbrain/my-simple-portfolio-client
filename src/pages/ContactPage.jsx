@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import Image from "../components/image";
+import ImageComponent from "../components/ImageComponent";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
 
@@ -10,7 +10,7 @@ const ContactPage = () => {
         <title>Sabbir Hassan | Contact</title>
       </Helmet>
       <div>
-        <Image />
+        <ImageComponent />
         <Education />
         <Contact />
       </div>
