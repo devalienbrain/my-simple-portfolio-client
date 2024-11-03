@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import ContactPage from "../pages/ContactPage";
 import DashboardLayout from "../layout/DashboardLayout";
 import SecretLoginPage from "../pages/SecretLoginPage";
+import SkillsTableInDashboard from "../pages/dashboardPages/SkillsTableInDashboard";
 
 const Routes = createBrowserRouter([
   {
@@ -41,7 +42,12 @@ const Routes = createBrowserRouter([
   {
     path: "/dashboard",
     element: <DashboardLayout />,
-    children: [{}],
+    children: [
+      {
+        path: "skills",
+        element: <SkillsTableInDashboard />,
+      },
+    ],
   },
 ]);
 export default Routes;

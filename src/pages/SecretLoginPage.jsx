@@ -15,7 +15,7 @@ const SecretLoginPage = () => {
   };
 
   return (
-    <div className="hero min-h-screen pt-10 font-semibold">
+    <div className="hero pt-10 font-semibold">
       <div className="card w-full max-w-xl ">
         <form className="card-body" onSubmit={handleEmailLogin}>
           <h1 className="text-4xl font-extrabold text-center mb-4">Login!</h1>
