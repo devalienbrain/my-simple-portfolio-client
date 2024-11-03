@@ -1,41 +1,44 @@
-import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
+import ProjectCard from "./ProjectCard";
+import useAxiosPublic from "../../hooks/useAxios";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [error, setError] = useState(null);
+  const axiosInstance = useAxiosPublic();
+
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchProjects = async () => {
       try {
-        const response = await fetch("/Projects.json");
-        const data = await response.json();
-        setProjects(data);
+        const response = await axiosInstance.get("projects");
+        setProjects(response.data);
+        setError(null); // Clear error if fetch is successful
       } catch (error) {
-        console.error("Error fetching data:", error);
+        setError(
+          error.response?.data?.message || "Error fetching projects data"
+        );
       }
     };
 
-    fetchData();
+    fetchProjects();
+  }, [axiosInstance]);
 
-    // Clean-up function in case component unmounts before fetch completes
-    return () => {
-      // Cancel any pending fetch requests or clean-up tasks
-    };
-  }, []); // Empty dependency array means this effect runs only once, on component mount
   return (
-    <div id="projects">
+    <div id="projects" className="py-10">
       <h1 className="text-xl font-extrabold text-slate-300 py-5 my-10">
         Project showcasing
       </h1>
-      <div>
-        <div className="grid grid-cols-1 gap-10">
-          {projects.map((project) => (
-            <div key={project.id} className="carousel w-full">
-              <div id="item1" className="carousel-item w-full">
-                <ProjectCard key={project.id} project={project}></ProjectCard>
-              </div>{" "}
+
+      {error && <p className="text-red-500 font-semibold">{error}</p>}
+
+      <div className="grid grid-cols-1 gap-10">
+        {projects.map((project) => (
+          <div key={project._id} className="carousel w-full">
+            <div className="carousel-item w-full">
+              <ProjectCard key={project._id} project={project}></ProjectCard>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
