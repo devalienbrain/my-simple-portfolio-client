@@ -3,6 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
 import ContactPage from "../pages/ContactPage";
+import DashboardLayout from "../layout/DashboardLayout";
+import SecretLoginPage from "../pages/SecretLoginPage";
 
 const Routes = createBrowserRouter([
   {
@@ -30,7 +32,16 @@ const Routes = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />,
       },
+      {
+        path: "/login",
+        element: <SecretLoginPage />,
+      },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [{}],
   },
 ]);
 export default Routes;

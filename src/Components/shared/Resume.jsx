@@ -23,10 +23,10 @@ function Resume() {
   }, [axiosInstance]);
 
   return (
-    <div className="flex justify-center items-center gap-4 my-5">
+    <div className="flex justify-center items-center gap-1 my-5">
       {error && <p className="text-red-500 font-semibold">{error}</p>}
       <a href={resumeViewLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-cyan-400">
-        <p>Resume</p>
+        <p>resume</p>
       </a>
       <a href={resumeDownloadLink} download className="flex items-center gap-1 hover:text-cyan-400">
         <PiDownloadSimpleThin className="w-5 h-5" />
