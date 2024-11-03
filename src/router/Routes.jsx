@@ -6,6 +6,7 @@ import ContactPage from "../pages/ContactPage";
 import DashboardLayout from "../layout/DashboardLayout";
 import SecretLoginPage from "../pages/SecretLoginPage";
 import SkillsTableInDashboard from "../pages/dashboardPages/SkillsTableInDashboard";
+import ProjectsTableInDashboard from "../pages/dashboardPages/ProjectsTableInDashbooard";
 
 const Routes = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const Routes = createBrowserRouter([
       {
         path: "skills",
         element: <SkillsTableInDashboard />,
+      },
+      {
+        path: "projects",
+        element: <ProjectsTableInDashboard />,
       },
     ],
   },
