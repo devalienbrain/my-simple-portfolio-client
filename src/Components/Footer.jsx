@@ -11,7 +11,6 @@ const Footer = () => {
     email: "",
     phone: "",
   });
-  const [error, setError] = useState(null);
   const axiosInstance = useAxiosPublic();
 
   useEffect(() => {
@@ -19,11 +18,18 @@ const Footer = () => {
       try {
         const response = await axiosInstance.get("/links");
         setContactInfo(response?.data);
-        setError(null); // Clear any previous error
       } catch (error) {
-        setError(error.response?.data?.message || "Error fetching contact information");
+        // If server fetch fails, load from local Links.json file
+        try {
+          const localResponse = await fetch("/Links.json");
+          const localData = await localResponse.json();
+          setContactInfo(localData);
+        } catch (localError) {
+          // No additional error handling needed
+        }
       }
     };
+
     fetchContactInfo();
   }, [axiosInstance]);
 
@@ -69,8 +75,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
-      {error && <p className="text-red-500 font-semibold mt-2">{error}</p>}
     </div>
   );
 };

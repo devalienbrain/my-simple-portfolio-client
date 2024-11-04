@@ -5,7 +5,6 @@ import useAxiosPublic from "../../hooks/useAxios";
 function Resume() {
   const [resumeViewLink, setResumeViewLink] = useState("");
   const [resumeDownloadLink, setResumeDownloadLink] = useState("");
-  const [error, setError] = useState(null);
   const axiosInstance = useAxiosPublic();
 
   useEffect(() => {
@@ -14,17 +13,24 @@ function Resume() {
         const response = await axiosInstance.get("/links");
         setResumeViewLink(response?.data?.resumeViewLink);
         setResumeDownloadLink(response?.data?.resumeDownloadLink);
-        setError(null); // Clear any previous error
       } catch (error) {
-        setError(error.response?.data?.message || "Error fetching resume links");
+        // Fallback: Load from local Links.json if server fetch fails
+        try {
+          const localResponse = await fetch("/Links.json");
+          const localData = await localResponse.json();
+          setResumeViewLink(localData.resumeViewLink);
+          setResumeDownloadLink(localData.resumeDownloadLink);
+        } catch (localError) {
+          // No further error handling required as per your request
+        }
       }
     };
+
     fetchLinks();
   }, [axiosInstance]);
 
   return (
     <div className="flex justify-center items-center gap-1 my-5">
-      {error && <p className="text-red-500 font-semibold">{error}</p>}
       <a href={resumeViewLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-cyan-400">
         <p>resume</p>
       </a>

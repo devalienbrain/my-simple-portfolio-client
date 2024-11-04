@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import useAxiosPublic from "../../hooks/useAxios";
@@ -15,8 +17,17 @@ const Projects = () => {
         setError(null); // Clear error if fetch is successful
       } catch (error) {
         setError(
-          error.response?.data?.message || "Error fetching projects data"
+          error.response?.data?.message || "Error fetching projects data. Loading from local..."
         );
+
+        // If there’s an error, fetch data from the local Projects.json file
+        try {
+          const localResponse = await fetch("/Projects.json");
+          const localData = await localResponse.json();
+          setProjects(localData);
+        } catch (localError) {
+          setError("Error loading projects data from local JSON file");
+        }
       }
     };
 
@@ -29,7 +40,7 @@ const Projects = () => {
         Project showcasing
       </h1>
 
-      {error && <p className="text-red-500 font-semibold">{error}</p>}
+      {error && <p className="text-red-500 text-xs">{error}</p>}
 
       <div className="grid grid-cols-1 gap-10">
         {projects.map((project) => (
