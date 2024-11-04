@@ -11,7 +11,8 @@ const Skills = () => {
     const fetchData = async () => {
       try {
         const response = await axiosInstance.get("skills");
-        setSkills(response.data);
+        setSkills(response?.data);
+        console.log(skills);
         setError(null); // Clear error if fetch is successful
       } catch (error) {
         setError(error.response?.data?.message || "Error fetching data");

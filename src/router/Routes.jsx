@@ -7,6 +7,8 @@ import DashboardLayout from "../layout/DashboardLayout";
 import SecretLoginPage from "../pages/SecretLoginPage";
 import SkillsTableInDashboard from "../pages/dashboardPages/SkillsTableInDashboard";
 import ProjectsTableInDashboard from "../pages/dashboardPages/ProjectsTableInDashbooard";
+import Skills from "../components/skills/Skills";
+import Projects from "../components/projects/Projects";
 
 const Routes = createBrowserRouter([
   {
@@ -45,12 +47,25 @@ const Routes = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
-        path: "skills",
+        path: "skillsTable",
         element: <SkillsTableInDashboard />,
       },
       {
-        path: "projects",
+        path: "projectsTable",
         element: <ProjectsTableInDashboard />,
+      },
+
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
       },
     ],
   },
