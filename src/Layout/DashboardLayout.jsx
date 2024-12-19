@@ -7,7 +7,7 @@ const DashboardLayout = () => {
     <div className="bg-slate-950 text-slate-300 min-h-screen flex flex-col">
       <div className="flex">
         {/* Sidebar Section */}
-        <div className="w-1/4 shadow-md px-4 flex flex-col">
+        <div className="w-64 shadow-md px-4 flex flex-col">
           {/* Portfolio Title */}
           <h1 className="text-xl font-extrabold text-left py-11">Hassan</h1>
 
@@ -27,7 +27,7 @@ const DashboardLayout = () => {
 
             {/* Skills Link */}
             <NavLink
-              to="/dashboard/skills"
+              to="/dashboard/skillsTable"
               className={({ isActive }) =>
                 isActive
                   ? "text-blue-600 font-semibold"
@@ -40,7 +40,7 @@ const DashboardLayout = () => {
 
             {/* Projects Link */}
             <NavLink
-              to="/dashboard/projects"
+              to="/dashboard/projectsTable"
               className={({ isActive }) =>
                 isActive
                   ? "text-blue-600 font-semibold"
@@ -67,7 +67,7 @@ const DashboardLayout = () => {
         </div>
 
         {/* Main Content Section */}
-        <div className="w-3/4 p-4">
+        <div className="p-4">
           <div className="shadow-md ">
             <DashboardNavbar />
           </div>

@@ -35,10 +35,14 @@ const Banner = () => {
 
   return (
     <div className="w-full py-10">
-       <p className="text-base font-light text-gray-400">
-        Hi, I'm <span className="font-bold">Sabbir Hassan</span> I specialize in crafting, deploying, and maintaining seamless web
-          infrastructures for flawless user experiences!
-        </p>
+      <p className="text-base font-light text-gray-400">
+        Hi, I'm <span className="font-bold">Sabbir Hassan</span> a passionate
+        Full-Stack Web Developer specializing in building and maintaining
+        seamless web solutions. I thrive on learning new technologies and have
+        expertise in React, Next.js, Redux, TypeScript, Node.js, Express.js,
+        MongoDB, Mongoose, SQL, PostgreSQL, and Prisma. My goal is to craft
+        user-centric applications that deliver flawless experiences.
+      </p>
     </div>
   );
 };

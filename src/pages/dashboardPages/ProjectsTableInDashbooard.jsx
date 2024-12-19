@@ -24,7 +24,7 @@ const ProjectsTableInDashboard = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axiosInstance.get("projects");
+        const response = await axiosInstance.get("/projects");
         setProjects(response?.data);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -33,7 +33,7 @@ const ProjectsTableInDashboard = () => {
 
     const fetchSkills = async () => {
       try {
-        const response = await axiosInstance.get("skills");
+        const response = await axiosInstance.get("/skills");
         setSkills(response?.data);
       } catch (error) {
         console.error("Error fetching skills:", error);
@@ -47,14 +47,14 @@ const ProjectsTableInDashboard = () => {
   const handleAddOrUpdateProject = async () => {
     try {
       if (isEditing) {
-        await axiosInstance.put(`projects/${modalData._id}`, modalData);
+        await axiosInstance.put(`/projects/${modalData._id}`, modalData);
         setProjects((prev) =>
           prev.map((project) =>
             project._id === modalData._id ? modalData : project
           )
         );
       } else {
-        const newProject = await axiosInstance.post("projects", modalData);
+        const newProject = await axiosInstance.post("/projects", modalData);
         setProjects([...projects, newProject?.data]);
       }
       setShowModal(false);
@@ -75,7 +75,7 @@ const ProjectsTableInDashboard = () => {
 
   const handleDeleteProject = async () => {
     try {
-      await axiosInstance.delete(`projects/${projectToDelete}`);
+      await axiosInstance.delete(`/projects/${projectToDelete}`);
       setProjects(
         projects.filter((project) => project._id !== projectToDelete)
       );

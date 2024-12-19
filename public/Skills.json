@@ -2,37 +2,62 @@
   {
     "id": 1,
     "title": "TypeScript",
-    "logo": "https://i.ibb.co.com/SPB3K5w/1typescript.png"
+    "logo": "https://i.ibb.co.com/fake-url/1typescript.png"
   },
   {
     "id": 2,
-    "title": "Redux",
-    "logo": "https://i.ibb.co.com/K5ydjxb/2redux.png"
+    "title": "Next.js",
+    "logo": "https://i.ibb.co.com/fake-url/3nextjs.png"
   },
   {
     "id": 3,
-    "title": "Nextjs",
-    "logo": "https://i.ibb.co.com/HCtrhD0/3Nextjs.png"
+    "title": "React",
+    "logo": "https://i.ibb.co.com/fake-url/6react.png"
   },
-
   {
     "id": 4,
-    "title": "MongoDB",
-    "logo": "https://i.ibb.co.com/QX3RrPn/4MongoDB.png"
+    "title": "Redux",
+    "logo": "https://i.ibb.co.com/fake-url/2redux.png"
   },
   {
     "id": 5,
-    "title": "Express",
-    "logo": "https://i.ibb.co.com/VV44JBj/express-js1720895493-logowik-com.png"
+    "title": "Node.js",
+    "logo": "https://i.ibb.co.com/fake-url/7nodejs.png"
   },
   {
     "id": 6,
-    "title": "React",
-    "logo": "https://i.ibb.co.com/5xVhtHs/6React.png"
+    "title": "MongoDB",
+    "logo": "https://i.ibb.co.com/fake-url/4mongodb.png"
   },
   {
     "id": 7,
-    "title": "Nodejs",
-    "logo": "https://i.ibb.co.com/T0vrfS8/7Nodejs.png"
+    "title": "Mongoose",
+    "logo": "https://i.ibb.co.com/tHQCvwx/mongoose.png"
+  },
+
+  {
+    "id": 8,
+    "title": "SQL",
+    "logo": "https://i.ibb.co.com/QMwnL5b/sql-server.png"
+  },
+  {
+    "id": 9,
+    "title": "DBMS",
+    "logo": "https://i.ibb.co.com/xq00DwG/database-management.png"
+  },
+  {
+    "id": 10,
+    "title": "PostgreSQL",
+    "logo": "https://i.ibb.co.com/YttdxZ7/pngwing-com-1.png"
+  },
+  {
+    "id": 11,
+    "title": "Prisma",
+    "logo": "https://i.ibb.co.com/JQcBpyh/pngwing-com-2.png"
+  },
+  {
+    "id": 12,
+    "title": "Docker",
+    "logo": "https://i.ibb.co.com/jzXs3jm/icons8-docker-96.png"
   }
 ]

@@ -10,8 +10,9 @@ const Skills = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axiosInstance.get("skills");
-        setSkills(response.data);
+        const response = await axiosInstance.get("/skills");
+        setSkills(response?.data);
+        console.log(skills);
         setError(null); // Clear error if fetch is successful
       } catch (error) {
         setError(
@@ -35,7 +36,9 @@ const Skills = () => {
 
   return (
     <div id="skills" className="py-10">
-      <h1 className="text-xl font-extrabold text-slate-300 py-5">Skill set</h1>
+      <h1 className="text-2xl font-extrabold text-slate-300 py-5 mb-5">
+        Skill set
+      </h1>
 
       {error && <p className="text-red-500 text-xs">{error}</p>}
 

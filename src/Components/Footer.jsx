@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <div className="py-4 bg-slate-950 text-gray-400">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-xs md:text-sm">
-        
+
         {/* Social Icons with Hover Arrow */}
         <div className="flex gap-4 items-center">
           <a
@@ -61,13 +61,11 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0">
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1" title={`${contactInfo.email}`}>
             <MdOutlineMarkEmailUnread className="w-4 h-4" />
-            <span>{contactInfo.email}</span>
           </p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1" title={`${contactInfo.phone}`}>
             <MdOutlinePhoneForwarded className="w-4 h-4" />
-            <span>{contactInfo.phone}</span>
           </p>
           <p className="flex items-center gap-1">
             <MdMyLocation className="w-4 h-4" />

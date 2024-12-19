@@ -1,10 +1,10 @@
-// import projectSs from "../../../public/Resources/projectSS.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
 import { SiXdadevelopers } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./animations.css";
+
 const ProjectCard = ({ project }) => {
   const {
     id,
@@ -32,24 +32,27 @@ const ProjectCard = ({ project }) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-7 text-lg font-bold">
-      <div className="flex items-center gap-2">
-        {id}.
-        <span className="bg-gradient-to-l from-cyan-400 via-cyan-500 to-blue-400 bg-clip-text text-transparent font-bold">
-          {websiteName}
-        </span>
-        <a href={liveSiteLink} target="_blank" rel="noopener noreferrer">
+    <div className="border p-4">
+      <div className="flex items-center gap-2 text-xl font-bold">
+        {/* <span>{id}.</span> */}
+        <span>{websiteName}</span>
+        <a
+          href={liveSiteLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:text-blue-300"
+        >
           <FaExternalLinkAlt />
         </a>
       </div>
-      <div className="flex flex-col gap-2">
-        <span> Technology used: </span>{" "}
-        {/* <span className="text-blue-700 ">{technology}</span> */}
-        <div className="flex gap-1 flex-wrap text-sm">
+
+      <div className="mt-4">
+        <span className="text-slate-300 font-semibold">Technology used:</span>
+        <div className="flex gap-2 flex-wrap mt-2">
           {technology.map((tech) => (
             <span
               key={tech}
-              className=" p-2 bg-slate-100/10 hover:bg-slate-100/10"
+              className="px-3 py-1 text-sm font-medium bg-slate-700 rounded-full text-cyan-300 hover:bg-slate-600"
             >
               {tech}
             </span>
@@ -57,34 +60,30 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 text-right text-sm font-bold">
-        <span className="w-5 h-5">
-          <SiXdadevelopers className="w-full h-full text-slate-200" />
-        </span>
+      <div className="flex items-center gap-3 mt-4 text-sm">
+        <SiXdadevelopers className="w-5 h-5 text-cyan-400" />
         <a
           href={githubClientCode}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-300 hover:underline hover:text-slate-200"
+          className="text-slate-300 hover:text-cyan-300 hover:underline"
         >
-          Client
+          Client Code
         </a>
         {githubServerCode && (
           <a
             href={githubServerCode}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-300 hover:underline hover:text-slate-200"
+            className="text-slate-300 hover:text-cyan-300 hover:underline"
           >
-            Server
+            Server Code
           </a>
         )}
       </div>
-      <p>
-        <span className="font-bold text-xs">
-          Short description of the project:
-        </span>{" "}
-        <span className="text-xs"> {details}</span>
+
+      <p className="mt-4 text-sm text-gray-400">
+        <span className="font-bold">Short description:</span> {details}
       </p>
     </div>
   );

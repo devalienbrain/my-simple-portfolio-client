@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import useAxiosPublic from "../../hooks/useAxios";
@@ -12,12 +10,14 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axiosInstance.get("projects");
-        setProjects(response.data);
+        const response = await axiosInstance.get("/projects");
+        console.log(response?.data);
+        setProjects(response?.data);
         setError(null); // Clear error if fetch is successful
       } catch (error) {
         setError(
-          error.response?.data?.message || "Error fetching projects data. Loading from local..."
+          error.response?.data?.message ||
+            "Error fetching projects data. Loading from local..."
         );
 
         // If there’s an error, fetch data from the local Projects.json file
@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="py-10">
-      <h1 className="text-xl font-extrabold text-slate-300 py-5 my-10">
+      <h1 className="text-2xl font-extrabold text-slate-300 py-5 my-5">
         Project showcasing
       </h1>
 

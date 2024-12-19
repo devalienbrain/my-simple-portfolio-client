@@ -14,7 +14,7 @@ const SkillsTableInDashboard = () => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await axiosInstance.get("skills");
+        const response = await axiosInstance.get("/skills");
         setSkills(response.data);
         setError(null);
       } catch (error) {
@@ -27,7 +27,7 @@ const SkillsTableInDashboard = () => {
 
   const handleAddSkill = async () => {
     try {
-      const response = await axiosInstance.post("skills", newSkill);
+      const response = await axiosInstance.post("/skills", newSkill);
       setSkills([...skills, response.data]);
       setNewSkill({ title: "", logo: "" }); // Reset input fields
     } catch (error) {
@@ -37,7 +37,7 @@ const SkillsTableInDashboard = () => {
 
   const handleUpdateSkill = async () => {
     try {
-      const response = await axiosInstance.put(`skills/${editingSkill._id}`, editingSkill);
+      const response = await axiosInstance.put(`/skills/${editingSkill._id}`, editingSkill);
       setSkills(skills.map(skill => (skill._id === editingSkill._id ? response.data : skill)));
       closeUpdateModal(); // Close modal after update
     } catch (error) {
@@ -47,7 +47,7 @@ const SkillsTableInDashboard = () => {
 
   const handleDeleteSkill = async (id) => {
     try {
-      await axiosInstance.delete(`skills/${id}`);
+      await axiosInstance.delete(`/skills/${id}`);
       setSkills(skills.filter(skill => skill._id !== id));
       closeDeleteModal(); // Close modal after deletion
     } catch (error) {
