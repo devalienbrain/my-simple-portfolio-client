@@ -40,7 +40,9 @@ const Skills = () => {
         Skill set
       </h1>
 
-      {error && <p className="text-red-500 text-xs">{error}</p>}
+      {error &&
+        // <p className="text-red-500 text-xs">{error}</p>
+        console.log(error)}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-950/10 rounded-2xl">
         {skills.map((skill) => (

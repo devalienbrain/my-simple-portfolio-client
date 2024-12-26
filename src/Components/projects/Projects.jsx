@@ -40,7 +40,9 @@ const Projects = () => {
         Project showcasing
       </h1>
 
-      {error && <p className="text-red-500 text-xs">{error}</p>}
+      {error &&
+        // <p className="text-red-500 text-xs">{error}</p>
+        console.log(error)}
 
       <div className="grid grid-cols-1 gap-10">
         {projects.map((project) => (
