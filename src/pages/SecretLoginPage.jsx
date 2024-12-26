@@ -10,7 +10,8 @@ const SecretLoginPage = () => {
 
   const handleEmailLogin = async (e) => {
     e.preventDefault();
-    if (password === "000") { // Replace "yourSecretCode" with the actual secret
+    if (password === "000") {
+      // Replace "yourSecretCode" with the actual secret
       navigate("/dashboard");
     } else {
       setError("Access Denied. Incorrect Password.");
@@ -20,14 +21,17 @@ const SecretLoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black text-white font-mono">
       <div className="w-full max-w-md p-8 space-y-8 border border-gray-700 rounded-md shadow-lg">
-        <h2 className="text-center text-3xl font-extrabold">Restricted Access</h2>
+        <h2 className="text-center text-3xl font-extrabold">
+          Restricted Access
+        </h2>
         <p className="text-center text-gray-400 text-sm">
-          This is a private portal intended solely for admin access. Unauthorized entry is prohibited.
-          If you find yourself here, please note that this area requires a secure password.
+          This is a private portal intended solely for admin access.
+          Unauthorized entry is prohibited. If you find yourself here, please
+          note that this area requires a secure password.
         </p>
         <p className="text-center text-gray-500 text-xs italic mt-2">
-          "Access beyond this point is reserved. Trespassers beware—no hacking skills can bypass this
-          gateway."
+          Access beyond this point is reserved. Trespassers beware—no hacking
+          skills can bypass this gateway.
         </p>
 
         {error && <p className="text-red-500 text-center">{error}</p>}
