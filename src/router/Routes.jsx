@@ -9,6 +9,9 @@ import SkillsTableInDashboard from "../pages/dashboardPages/SkillsTableInDashboa
 import ProjectsTableInDashboard from "../pages/dashboardPages/ProjectsTableInDashbooard";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
+import Blog from "../pages/blog/Blog";
+import SingleBlogCard from "../pages/blog/SingleBlogCard";
+import ShowBlogDetails from "../pages/blog/ShowBlogDetails";
 
 const Routes = createBrowserRouter([
   {
@@ -35,6 +38,14 @@ const Routes = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+      {
+        path: `blogDetails/:id`,
+        element: <ShowBlogDetails />,
       },
       {
         path: "/login",
