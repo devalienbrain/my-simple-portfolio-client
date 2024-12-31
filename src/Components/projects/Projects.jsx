@@ -45,7 +45,7 @@ const Projects = () => {
         console.log(error)}
 
       <div className="grid grid-cols-1 gap-10">
-        {projects.map((project) => (
+        {projects?.map((project) => (
           <div key={project._id} className="carousel w-full">
             <div className="carousel-item w-full">
               <ProjectCard key={project._id} project={project}></ProjectCard>
