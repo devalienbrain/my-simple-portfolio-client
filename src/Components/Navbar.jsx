@@ -1,17 +1,19 @@
-// Navbar.js
 import NavLinks from "./shared/NavLinks";
 import Resume from "./shared/Resume";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center py-7 text-slate-300">
-      <div className="flex justify-start">
-        <NavLinks dashboard={false} /> {/* Pass dashboard prop as false */}
+    <nav className="w-full py-5 flex flex-col-reverse md:flex-row items-start md:items-center justify-between">
+      {/* NavLinks for Desktop */}
+      <div className="flex space-x-6">
+        <NavLinks />
       </div>
-      <span className="flex justify-end">
+
+      {/* Resume Link */}
+      <div className="flex items-center">
         <Resume />
-      </span>
-    </div>
+      </div>
+    </nav>
   );
 };
 

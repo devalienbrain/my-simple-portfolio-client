@@ -32,9 +32,6 @@ const NavLinks = () => {
       <Link to="/blog">
         <span className="hover:text-cyan-400">blog</span>
       </Link>
-      <Link to="/dashboard">
-        <span className="text-black hover:text-white">secret</span>
-      </Link>
     </div>
   );
 
